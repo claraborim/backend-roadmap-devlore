@@ -4,7 +4,7 @@ def adicionar_tarefa(tarefas):
 
 def listar_tarefas(tarefas):
     if len(tarefas) > 0:
-        print("")
+        print()
         for i, tarefa in enumerate(tarefas, 1):
             print(f"{i} - {'[X]' if tarefa['status'] else '[ ]'} {tarefa['nome']}")
     else:
@@ -42,4 +42,4 @@ while True:
         case "4":
             break
         case _:
-            print("Opção inválida.")
+            print("\nOpção inválida.")
